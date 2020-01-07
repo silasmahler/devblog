@@ -1,6 +1,6 @@
 # adesso AG devblog
 
-Dieses Repository beinhaltet Blog Posts für den [adesso Blog](https://blog.adesso.de/).
+Dieses Repository beinhaltet Blog Posts für den [adesso Blog](https://blog.adesso.de/).:
 
 ## Wie kann ich einen Blog Post veröffentlichen?
 Eine Anleitung, wie ein Blog Post über dieses Repository veröffentlicht werden kann,
