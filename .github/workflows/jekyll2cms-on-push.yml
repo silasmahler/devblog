@@ -1,0 +1,16 @@
+name: Execute Jekyll2cms Transformation for FristSpiritCMS on master-push
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  D:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Execute Jekyll2cms latest release from the other repo
+      run: |
+        //TODO 
