@@ -12,4 +12,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Trigger the execution of jekyll2cms latest release in the jekyll2cms repository 
       run: |
-        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json"  -H "Content-Type: application/json" ${{secrets.DISPATCH_REPO}} 
+        curl -X POST https://api.github.com/repos/adessoAG/jekyll2cms/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ${{ secrets.PAT_TOKEN }} \
+          --data '{"event_type": "ping", "client_payload": { "repository": "'"$DISPATCH_REPO"'" }}'
