@@ -9,11 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
     - name: Trigger the execution of jekyll2cms latest release in the jekyll2cms repository 
       run: |
-        curl -H "Accept: application/vnd.github.everest-preview+json" \
+        curl -XPOST \
+             -H "Accept: application/vnd.github.everest-preview+json" \
              -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
-             --request POST \
              --data '{"event_type": "do-trigger-jekyll2cms"}' \
              ${{ secrets.DISPATCH_REPO }}
