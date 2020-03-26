@@ -6,7 +6,6 @@
         <field name="teaser"><![CDATA[<p>Die Container-Orchestrierungs-Lösung Kubernetes ist eines der am stärksten gewachsenen Open-Source-Projekte der letzten Jahre.
 Alle großen Cloud-Anbieter wie Google, Amazon, Microsoft und weitere bieten heutzutage Kubernetes-Instanzen an und unzählige Firmen lagern ihre Anwendungen auf Cluster in der Cloud aus, die mit Kubernetes betrieben werden.
 Grund genug, sich einmal näher mit Kubernetes und den Konzepten dahinter zu beschäftigen.</p>
-
 ]]></field>
         <field name="language_multi_keyword"><![CDATA[de]]></field>
         <field name="content_type_multi_keyword"><![CDATA[blog]]></field>
@@ -30,7 +29,6 @@ Grund genug, sich einmal näher mit Kubernetes und den Konzepten dahinter zu bes
             <p>Die Container-Orchestrierungs-Lösung Kubernetes ist eines der am stärksten gewachsenen Open-Source-Projekte der letzten Jahre.
 Alle großen Cloud-Anbieter wie Google, Amazon, Microsoft und weitere bieten heutzutage Kubernetes-Instanzen an und unzählige Firmen lagern ihre Anwendungen auf Cluster in der Cloud aus, die mit Kubernetes betrieben werden.
 Grund genug, sich einmal näher mit Kubernetes und den Konzepten dahinter zu beschäftigen.</p>
-
 </div>]]></field>
         <field name="content"><![CDATA[<div class="adesso-text-formate">
 <div class="row p-t-2">
