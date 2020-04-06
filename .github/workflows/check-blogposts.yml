@@ -3,8 +3,8 @@ name: check-blogposts
 
 on:
   pull_request:
-    branches: [ master ]
-
+    branches:
+      - master
 jobs:
   pull-and-run-blogpost-checker-docker-image:
     runs-on: ubuntu-latest
