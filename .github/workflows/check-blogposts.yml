@@ -8,12 +8,11 @@ on:
     - '!master'
 
 jobs:
-  pull-and-run-jekyll2cms-docker-image:
+  pull-and-run-blogpost-checker-docker-image:
     runs-on: ubuntu-latest
 
     steps:
     - name: Extract branch name
-      shell: bash
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: extract_branch
 
