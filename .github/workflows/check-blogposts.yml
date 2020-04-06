@@ -12,14 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Extract branch name
-      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-      id: extract_branch
+      - name: Extract branch name
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
 
-    - uses: actions/checkout@master
+      - name: Pull Docker image
+        run: docker pull jekyll2cms/blogpost-checker:1.0.0
 
-    - name: Pull Docker image
-      run: docker pull jekyll2cms/blogpost-checker:1.0.0
-
-    - name: Run Docker image
-      run: docker run --env REPOSITORY_REMOTE_URL='${{ secrets.REPOSITORY_REMOTE_URL }}' --env REPOSITORY_BRANCH_NAME='${{ steps.extract_branch.outputs.branch }}'  jekyll2cms/blogpost-checker:1.0.0
+      - name: Run Docker image
+        run: docker run --env REPOSITORY_REMOTE_URL='${{ secrets.REPOSITORY_REMOTE_URL }}' --env REPOSITORY_BRANCH_NAME='${{ steps.extract_branch.outputs.branch }}'  jekyll2cms/blogpost-checker:1.0.0
