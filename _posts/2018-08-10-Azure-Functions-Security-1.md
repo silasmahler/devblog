@@ -11,7 +11,7 @@ Gibt es "Sicherheit" bei Azure Funktionen? Sind diese immer öffentlich zugängl
 
 # Azure Funktionen
 Azure Funktionen - serverlose Funktionen - sind eine Möglichkeit, einfache kleine Services zu erstellen, die ohne große Infrastruktur auskommen.
-Die Doku zu [*Skalierung und Hosting von Azure Functions*](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) unterscheidet Funktionen, die auf einem Verbrauchsplan beruhen und Funktionen, die auf einem App-Service-Plan beruhen. Den Grundlegenden Unterschied beschreibt die Dokumentation wie folgt:
+Die Doku zu [*Skalierung und Hosting von Azure Functions*](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale) unterscheidet Funktionen, die auf einem Verbrauchsplan beruhen und Funktionen, die auf einem App-Service-Plan beruhen. Den Grundlegenden Unterschied beschreibt die Dokumentation wie folgdedet:
 
 > **Verbrauchsplan**
 > 
