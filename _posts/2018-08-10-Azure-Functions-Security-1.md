@@ -15,7 +15,7 @@ Die Doku zu [*Skalierung und Hosting von Azure Functions*](https://docs.microsof
 
 > **Verbrauchsplan**
 > 
-> Bei Verwendung eines Verbrauchsplans werden Instanzen des Azure Functions-Hosts dynamisch, basierend auf der Anzahl der eingehenden Ereignisse hinzugefügt und edsdsntfernt. 
+> Bei Verwendung eines Verbrauchsplans werden Instanzen des Azure Functions-Hosts dynamisch, basierend auf der Anzahl der eingehenden Ereignisse hinzugefügt und edsdsntfernt. d
 > Dieser Plan wird automatisch skaliert, sodass Ihnen nur dann Computeressourcen berechnet werden, wenn Ihre Funktionen ausgeführt werden. 
 > In einem Verbrauchsplan tritt für eine Fudnktionsausführung nach einem konfigurierbaren Zeitraum ein Timeout auf.
 >
