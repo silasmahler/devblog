@@ -1,0 +1,26 @@
+#Run blogpost-checker in a Docker container to check  the new blogposts and block the merge if it fails
+name: check-blogposts
+
+on:
+  push:
+  branches:
+    - '*'         # matches every branch
+    - '!master'
+
+jobs:
+  pull-and-run-jekyll2cms-docker-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Extract branch name
+          shell: bash
+          run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+          id: extract_branch
+
+      - uses: actions/checkout@master
+        
+      - name: Pull Docker image
+        run: docker pull jekyll2cms/blogpost-checker:1.0.0
+
+      - name: Run Docker image
+        run: docker run --env REPOSITORY_REMOTE_URL='${{ secrets.REPOSITORY_REMOTE_URL }}' --env REPOSITORY_BRANCH_NAME='${{ steps.extract_branch.outputs.branch }}'  jekyll2cms/blogpost-checker:1.0.0
