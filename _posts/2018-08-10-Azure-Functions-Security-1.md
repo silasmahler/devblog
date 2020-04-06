@@ -5,7 +5,7 @@ date:           2018-08-10 12:42
 modified_date:  2018-08-10 12:42
 author:         nils-a
 categories:     [Microsoft]
-tags:           [azure, functions, security, paas
+tags:           [azure, functions, security, paas]
 ---
 Gibt es "Sicherheit" bei Azure Funktionen? Sind diese immer öffentlich zugänglich? Können Funktionen mit Benutzer-Autorisierung abgesichert werden? Dieser Beitrag versucht diesen und anderen Fragen nachzugehen.
 
