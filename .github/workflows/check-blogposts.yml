@@ -2,10 +2,8 @@
 name: check-blogposts
 
 on:
-  push:
-    branches:
-      - '*'         # matches every branch
-      - '!master'
+  pull_request:
+    branches: [ master ]
 
 jobs:
   pull-and-run-blogpost-checker-docker-image:
